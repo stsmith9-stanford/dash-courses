@@ -1,0 +1,92 @@
+# Compact styles for dropdowns (quarter-select and requirement-filter)
+
+/* Shared container styles */
+#quarter-select .Select-control,
+#requirement-filter .Select-control {
+  min-height: 40px;
+  background-color: #141a21;
+  border-color: #2a2f36;
+  box-shadow: none;
+  color: #e6ebf0;
+}
+
+#quarter-select .is-focused:not(.is-open) > .Select-control,
+#requirement-filter .is-focused:not(.is-open) > .Select-control {
+  border-color: #3a4151;
+  box-shadow: 0 0 0 2px rgba(58, 65, 81, 0.2);
+}
+
+/* Compact chips for multi-select (requirement-filter only) */
+#requirement-filter .Select--multi .Select-value {
+  display: inline-flex;
+  align-items: center;
+  background: #1a212b;
+  border: 1px solid #2a2f36;
+  color: #e6ebf0;
+  border-radius: 10px;
+  padding: 2px 6px;
+  margin: 2px 4px;
+}
+
+#requirement-filter .Select--multi .Select-value-icon {
+  border-right: none;
+  color: #8fa1b3;
+  margin-right: 4px;
+}
+
+#requirement-filter .Select--multi .Select-value-icon:hover {
+  color: #d0dae6;
+}
+
+#requirement-filter .Select--multi .Select-value-label {
+  color: inherit;
+  font-size: 12px;
+}
+
+#requirement-filter .Select-multi-value-wrapper {
+  max-height: 64px;
+  overflow: auto;
+}
+
+/* Input & placeholder colors */
+#quarter-select .Select-placeholder,
+#requirement-filter .Select-placeholder,
+#quarter-select .Select--single > .Select-control .Select-value,
+#requirement-filter .Select--single > .Select-control .Select-value {
+  color: #b7c0cc;
+}
+
+#quarter-select .Select-input > input,
+#requirement-filter .Select-input > input {
+  color: #e6ebf0;
+}
+
+/* Labels above inputs */
+label { color: #e6ebf0; }
+
+/* Menu */
+#quarter-select .Select-menu-outer,
+#requirement-filter .Select-menu-outer {
+  background: #141a21;
+  border-color: #2a2f36;
+}
+
+#quarter-select .VirtualizedSelectOption,
+#requirement-filter .VirtualizedSelectOption {
+  background: #141a21;
+  color: #e6ebf0;
+}
+
+#quarter-select .VirtualizedSelectFocusedOption,
+#requirement-filter .VirtualizedSelectFocusedOption,
+#quarter-select .VirtualizedSelectOption:hover,
+#requirement-filter .VirtualizedSelectOption:hover {
+  background: #1f2630;
+}
+
+/* Selected options in menu */
+#requirement-filter .VirtualizedSelectOption.is-selected {
+  background: #22303c;
+}
+
+

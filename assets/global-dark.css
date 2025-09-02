@@ -1,0 +1,56 @@
+/* Global dark theme */
+html,
+body {
+  background-color: #0b0f14;
+  color: #f0f0f0;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+/* Inputs */
+#search-text {
+  background-color: #141a21;
+  border: 1px solid #2a2f36;
+  color: #e6ebf0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+#search-text::placeholder {
+  color: #8fa1b3;
+}
+
+/* Range slider (Dash rc-slider) */
+.rc-slider-rail {
+  background-color: #1f2630;
+}
+.rc-slider-track {
+  background-color: #3a4151;
+}
+.rc-slider-handle {
+  border-color: #6b7685;
+  background-color: #0b0f14;
+  box-shadow: 0 0 0 2px rgba(107, 118, 133, 0.25);
+}
+.rc-slider-dot-active {
+  border-color: #3a4151;
+}
+
+/* Plotly modebar */
+.modebar {
+  background: transparent !important;
+}
+.modebar-btn:hover {
+  background: #1f2630 !important;
+}
+
+/* Anchors */
+a {
+  color: #8ab4ff;
+}
+a:hover {
+  color: #bcd3ff;
+}
+
+
