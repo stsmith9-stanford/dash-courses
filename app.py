@@ -16,7 +16,7 @@ BASE_PATH = os.getenv('APP_BASE_PATH', '/')
 if not BASE_PATH.endswith('/'):
     BASE_PATH = BASE_PATH + '/'
 path_kwargs = {}
-if BASE_PATH not in (/,):
+if BASE_PATH not in ("/", ""):
     path_kwargs = dict(requests_pathname_prefix=BASE_PATH, routes_pathname_prefix=BASE_PATH)
 app = dash.Dash(
     __name__,
